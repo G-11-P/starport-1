@@ -21,7 +21,7 @@ func NewChainInit() *cobra.Command {
 	return c
 }
 
-func chainInitHandler(cmd *cobra.Command, args []string) error {
+func chainInitHandler(cmd *cobra.Command, _ []string) error {
 	chainOption := []chain.Option{
 		chain.LogLevel(logLevel(cmd)),
 		chain.KeyringBackend(chaincmd.KeyringBackendTest),

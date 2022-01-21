@@ -16,7 +16,7 @@ func NewGenerateOpenAPI() *cobra.Command {
 	}
 }
 
-func generateOpenAPIHandler(cmd *cobra.Command, args []string) error {
+func generateOpenAPIHandler(cmd *cobra.Command, _ []string) error {
 	s := clispinner.New().SetText("Generating...")
 	defer s.Stop()
 

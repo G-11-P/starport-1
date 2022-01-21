@@ -31,7 +31,7 @@ func NewChainServe() *cobra.Command {
 	return c
 }
 
-func chainServeHandler(cmd *cobra.Command, args []string) error {
+func chainServeHandler(cmd *cobra.Command, _ []string) error {
 	chainOption := []chain.Option{
 		chain.LogLevel(logLevel(cmd)),
 	}

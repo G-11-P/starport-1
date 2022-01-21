@@ -22,7 +22,7 @@ func NewScaffoldVue() *cobra.Command {
 	return c
 }
 
-func scaffoldVueHandler(cmd *cobra.Command, args []string) error {
+func scaffoldVueHandler(cmd *cobra.Command, _ []string) error {
 	s := clispinner.New().SetText("Scaffolding...")
 	defer s.Stop()
 

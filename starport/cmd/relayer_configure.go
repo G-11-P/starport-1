@@ -80,7 +80,7 @@ func NewRelayerConfigure() *cobra.Command {
 	return c
 }
 
-func relayerConfigureHandler(cmd *cobra.Command, args []string) (err error) {
+func relayerConfigureHandler(cmd *cobra.Command, _ []string) (err error) {
 	defer func() {
 		err = handleRelayerAccountErr(err)
 	}()

@@ -23,7 +23,7 @@ func NewScaffoldFlutter() *cobra.Command {
 	return c
 }
 
-func scaffoldFlutterHandler(cmd *cobra.Command, args []string) error {
+func scaffoldFlutterHandler(cmd *cobra.Command, _ []string) error {
 	s := clispinner.New().SetText("Scaffolding...")
 	defer s.Stop()
 
