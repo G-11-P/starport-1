@@ -47,7 +47,7 @@ Sample usages:
 	return c
 }
 
-func chainBuildHandler(cmd *cobra.Command, args []string) error {
+func chainBuildHandler(cmd *cobra.Command, _ []string) error {
 	var (
 		isRelease, _      = cmd.Flags().GetBool(flagRelease)
 		releaseTargets, _ = cmd.Flags().GetStringSlice(flagReleaseTargets)

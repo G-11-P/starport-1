@@ -18,7 +18,7 @@ func NewGenerateVuex() *cobra.Command {
 	return c
 }
 
-func generateVuexHandler(cmd *cobra.Command, args []string) error {
+func generateVuexHandler(cmd *cobra.Command, _ []string) error {
 	s := clispinner.New().SetText("Generating...")
 	defer s.Stop()
 

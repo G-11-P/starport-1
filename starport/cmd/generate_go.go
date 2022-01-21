@@ -16,7 +16,7 @@ func NewGenerateGo() *cobra.Command {
 	}
 }
 
-func generateGoHandler(cmd *cobra.Command, args []string) error {
+func generateGoHandler(cmd *cobra.Command, _ []string) error {
 	s := clispinner.New().SetText("Generating...")
 	defer s.Stop()
 

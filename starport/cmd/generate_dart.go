@@ -18,7 +18,7 @@ func NewGenerateDart() *cobra.Command {
 	return c
 }
 
-func generateDartHandler(cmd *cobra.Command, args []string) error {
+func generateDartHandler(cmd *cobra.Command, _ []string) error {
 	s := clispinner.New().SetText("Generating...")
 	defer s.Stop()
 
