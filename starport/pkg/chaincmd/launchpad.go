@@ -13,7 +13,7 @@ const (
 )
 
 // launchpadSetConfigCommand
-func (c ChainCmd) launchpadSetConfigCommand(name string, value string) step.Option {
+func (c ChainCmd) launchpadSetConfigCommand(name, value string) step.Option {
 	command := []string{
 		commandConfig,
 		name,
@@ -24,7 +24,7 @@ func (c ChainCmd) launchpadSetConfigCommand(name string, value string) step.Opti
 }
 
 // launchpadRestServerCommand
-func (c ChainCmd) launchpadRestServerCommand(apiAddress string, rpcAddress string) step.Option {
+func (c ChainCmd) launchpadRestServerCommand(apiAddress, rpcAddress string) step.Option {
 	command := []string{
 		commandRestServer,
 		optionUnsafeCors,

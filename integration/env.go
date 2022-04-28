@@ -248,7 +248,7 @@ func (e Env) TmpDir() (path string) {
 
 // RandomizeServerPorts randomizes server ports for the app at path, updates
 // its config.yml and returns new values.
-func (e Env) RandomizeServerPorts(path string, configFile string) chainconfig.Host {
+func (e Env) RandomizeServerPorts(path, configFile string) chainconfig.Host {
 	if configFile == "" {
 		configFile = "config.yml"
 	}
@@ -288,7 +288,7 @@ func (e Env) RandomizeServerPorts(path string, configFile string) chainconfig.Ho
 }
 
 // SetRandomHomeConfig sets in the blockchain config files generated temporary directories for home directories
-func (e Env) SetRandomHomeConfig(path string, configFile string) {
+func (e Env) SetRandomHomeConfig(path, configFile string) {
 	if configFile == "" {
 		configFile = "config.yml"
 	}
