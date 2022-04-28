@@ -273,7 +273,7 @@ func (s Scaffolder) ImportModule(tracer *placeholder.Tracer, name string) (sm xg
 }
 
 // moduleExists checks if the module exists in the app
-func moduleExists(appPath string, moduleName string) (bool, error) {
+func moduleExists(appPath, moduleName string) (bool, error) {
 	absPath, err := filepath.Abs(filepath.Join(appPath, moduleDir, moduleName))
 	if err != nil {
 		return false, err

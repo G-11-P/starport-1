@@ -76,7 +76,7 @@ type Option func(*Faucet)
 
 // Account provides the account information to transfer tokens from.
 // when mnemonic isn't provided, account assumed to be exists in the keyring.
-func Account(name, mnemonic string, coinType string) Option {
+func Account(name, mnemonic, coinType string) Option {
 	return func(f *Faucet) {
 		f.accountName = name
 		f.accountMnemonic = mnemonic

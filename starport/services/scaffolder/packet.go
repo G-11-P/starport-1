@@ -146,7 +146,7 @@ func (s Scaffolder) AddPacket(
 
 // isIBCModule returns true if the provided module implements the IBC module interface
 // we naively check the existence of module_ibc.go for this check
-func isIBCModule(appPath string, moduleName string) (bool, error) {
+func isIBCModule(appPath, moduleName string) (bool, error) {
 	absPath, err := filepath.Abs(filepath.Join(appPath, moduleDir, moduleName, ibcModuleImplementation))
 	if err != nil {
 		return false, err
